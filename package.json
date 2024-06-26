@@ -1,0 +1,33 @@
+{
+  "name": "desafio",
+  "author": "",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "ISC",
+  "type": "module",
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/standard/eslintrc.json"
+    ],
+    "env": {
+      "jest": true
+    }
+  },
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "vitest --run",
+    "test:coverage": "vitest --coverage --run"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^1.6.0",
+    "nodemon": "^3.1.4",
+    "standard": "^17.1.0",
+    "supertest": "^7.0.0",
+    "vitest": "^1.6.0"
+  }
+}
